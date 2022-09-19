@@ -1,0 +1,179 @@
+:root {
+    --logo-main-color: #000;
+    --prim-bg-color: #fff;
+    --sec-bg-color: #f5f4fa;
+    --hero-bg-color: #2f303a;
+    --prim-text-color: #212121;
+    --sec-text-color: #757575;
+    --accent-color: #2196f3;
+    --hero-text-color: #fff;
+    --footer-sec-text-color: rgba(255, 255, 255, 0.6);
+    --footer-main-text-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    background-color: var(--prim-bg-color);
+    color: var(--prim-text-color);
+}
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.semantic-list {
+    list-style: none;
+}
+.link-undecor {
+    text-decoration: none;
+}
+
+/* лого */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo-main-color);
+}
+.logo-blue {
+    color: var(--accent-color);
+}
+
+/* Навбар */
+.navbar {
+}
+
+.navbar-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--prim-text-color);
+}
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-contact:hover,
+.navbar-contact:focus,
+.active {
+    color: var(--accent-color);
+}
+.navbar-contact {
+    color: var(--sec-text-color);
+}
+
+/* Герой */
+.hero {
+    letter-spacing: 0.06em;
+    background-color: var(--hero-bg-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+}
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+
+/* Преимущества */
+.adv-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.adv-descript {
+    line-height: 1.71;
+    color: var(--sec-text-color);
+}
+
+/* Галерея */
+.gallery-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Команда */
+.team {
+    background-color: var(--sec-bg-color);
+}
+.memb {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    background-color: var(--prim-bg-color);
+}
+.memb-name {
+    font-weight: 500;
+}
+.memb-position {
+    color: var(--sec-text-color);
+}
+
+/* Футер */
+.footer {
+    background-color: var(--hero-bg-color);
+}
+.footer-logo {
+    color: var(--footer-main-text-color);
+}
+.adress {
+    font-style: normal;
+    line-height: 1.71;
+}
+.footer-address {
+    color: var(--footer-main-text-color);
+}
+.footer-contact {
+    color: var(--footer-sec-text-color);
+}
+
+/* Проекты */
+.projects-btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--sec-bg-color);
+    color: var(--prim-text-color);
+}
+.projects-btn:hover,
+.projects-btn:focus,
+.projects-btn:active {
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+.proj-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--prim-text-color);
+}
+.proj-type {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--sec-text-color);
+}
