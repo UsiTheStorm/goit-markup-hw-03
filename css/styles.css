@@ -20,6 +20,26 @@ body {
     color: var(--prim-text-color);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .hidden {
     position: absolute;
     white-space: nowrap;
@@ -41,6 +61,7 @@ body {
 
 /* лого */
 .logo {
+    margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -52,7 +73,25 @@ body {
 }
 
 /* Навбар */
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .navbar-link {
@@ -60,6 +99,10 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--prim-text-color);
+}
+
+.nav-links .item:not(:last-child) {
+    margin-right: 50px;
 }
 .navbar-link:hover,
 .navbar-link:focus,
@@ -73,9 +116,19 @@ body {
 }
 
 /* Герой */
-.hero {
-    letter-spacing: 0.06em;
+
+.hero-section {
     background-color: var(--hero-bg-color);
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    letter-spacing: 0.06em;
 }
 .hero-title {
     font-weight: 900;
@@ -86,6 +139,16 @@ body {
     color: var(--hero-text-color);
 }
 .hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -95,7 +158,21 @@ body {
 }
 
 /* Преимущества */
+.advantages {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+}
+.adv-item {
+    max-width: 270px;
+    margin-right: 30px;
+}
+.adv-item:last-child {
+    margin-right: 0;
+}
 .adv-title {
+    margin-bottom: 10px;
+
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -106,8 +183,22 @@ body {
 }
 
 /* Галерея */
+.gallery {
+    margin-top: 94px;
+}
+.gallery-container,
+.team-container {
+    display: flex;
+    justify-content: center;
+}
+.gallery-container > .item:not(:last-child),
+.memb:not(:last-child) {
+    margin-right: 30px;
+}
 .gallery-title,
 .team-title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -116,6 +207,9 @@ body {
 
 /* Команда */
 .team {
+    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--sec-bg-color);
 }
 .memb {
@@ -125,9 +219,13 @@ body {
     background-color: var(--prim-bg-color);
 }
 .memb-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
 }
 .memb-position {
+    margin-bottom: 30px;
     color: var(--sec-text-color);
 }
 
@@ -135,7 +233,14 @@ body {
 .footer {
     background-color: var(--hero-bg-color);
 }
+.footer .items {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
     color: var(--footer-main-text-color);
 }
 .adress {
@@ -148,9 +253,25 @@ body {
 .footer-contact {
     color: var(--footer-sec-text-color);
 }
-
+.addr .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+/* ! Стр 2 */
 /* Проекты */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 174px;
+}
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 .projects-btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
@@ -165,7 +286,27 @@ body {
     background-color: var(--accent-color);
     color: var(--hero-text-color);
 }
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+.proj-item {
+    width: 370px;
+    margin: 15px;
+
+    border: 1px solid #eeeeee;
+}
+.proj-descript-block {
+    display: block;
+    margin: 20px 24px;
+}
 .proj-name {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
