@@ -39,6 +39,10 @@ ul {
     margin-right: auto;
     margin-left: auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .hidden {
     position: absolute;
@@ -161,7 +165,6 @@ ul {
 .advantages {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
 }
 .adv-item {
     max-width: 270px;
@@ -183,9 +186,6 @@ ul {
 }
 
 /* Галерея */
-.gallery {
-    margin-top: 94px;
-}
 .gallery-container,
 .team-container {
     display: flex;
@@ -207,9 +207,6 @@ ul {
 
 /* Команда */
 .team {
-    margin-top: 94px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--sec-bg-color);
 }
 .memb {
@@ -261,7 +258,6 @@ ul {
 .filter {
     display: flex;
     justify-content: center;
-    margin-top: 174px;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -292,7 +288,6 @@ ul {
     flex-wrap: wrap;
     margin: -15px;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 .proj-item {
     width: 370px;
