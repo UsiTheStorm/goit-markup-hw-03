@@ -99,6 +99,9 @@ ul {
 }
 
 .navbar-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
