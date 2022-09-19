@@ -21,51 +21,57 @@
     <title>Портофоліо</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="logo link-undecor" href="./index.html"
-          ><span class="logo-blue">Web</span>Studio</a
-        >
-        <ul class="semantic-list">
-          <li><a class="navbar-link link-undecor" href="./index.html">Студія</a></li>
-          <li><a class="navbar-link link-undecor active" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="navbar-link link-undecor" href="#">Контакти</a></li>
+    <header class="header">
+      <div class="container main-nav">
+        <nav class="navbar">
+          <a class="logo link-undecor" href="./index.html"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+          <ul class="semantic-list nav-links">
+            <li class="item">
+              <a class="navbar-link link-undecor" href="./index.html">Студія</a>
+            </li>
+            <li class="item">
+              <a class="navbar-link link-undecor active" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item"><a class="navbar-link link-undecor" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="semantic-list nav-links">
+          <li class="item">
+            <a class="navbar-contact navbar-link link-undecor" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="navbar-contact navbar-link link-undecor" href="tel:380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="semantic-list">
-        <li>
-          <a class="navbar-contact navbar-link link-undecor" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="navbar-contact navbar-link link-undecor" href="tel:380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <!-- Скрытый заголовок -->
       <h1 class="hidden">Проєкти</h1>
-      <ul class="semantic-list">
-        <li><button class="projects-btn" type="button">Усі</button></li>
-        <li><button class="projects-btn" type="button">Веб-сайти</button></li>
-        <li><button class="projects-btn" type="button">Додатки</button></li>
-        <li><button class="projects-btn" type="button">Додатки</button></li>
-        <li><button class="projects-btn" type="button">Маркетинг</button></li>
+      <ul class="semantic-list filter">
+        <li class="filter-item"><button class="projects-btn" type="button">Усі</button></li>
+        <li class="filter-item"><button class="projects-btn" type="button">Веб-сайти</button></li>
+        <li class="filter-item"><button class="projects-btn" type="button">Додатки</button></li>
+        <li class="filter-item"><button class="projects-btn" type="button">Додатки</button></li>
+        <li class="filter-item"><button class="projects-btn" type="button">Маркетинг</button></li>
       </ul>
-      <ul class="semantic-list">
-        <li>
+      <ul class="semantic-list projects">
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project1.jpg" alt="Технокряк" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Технокряк</h2>
               <p class="proj-type">Веб-сайт</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img
               class="proj-img"
@@ -73,40 +79,40 @@
               alt="Постер New Orlean vs Golden Star"
               width="370"
             />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Постер New Orlean vs Golden Star</h2>
               <p class="proj-type">Дизайн</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project3.jpg" alt="Ресторан Seafood" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Ресторан Seafood</h2>
               <p class="proj-type">Додаток</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project4.jpg" alt="Проєкт Prime" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Проєкт Prime</h2>
               <p class="proj-type">Маркетинг</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project5.jpg" alt="Проєкт Boxes" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Проєкт Boxes</h2>
               <p class="proj-type">Додаток</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img
               class="proj-img"
@@ -114,13 +120,13 @@
               alt="Inspiration has no Borders"
               width="370"
             />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Inspiration has no Borders</h2>
               <p class="proj-type">Веб-сайт</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img
               class="proj-img"
@@ -128,25 +134,25 @@
               alt="Видання Limited Edition"
               width="370"
             />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Видання Limited Edition</h2>
               <p class="proj-type">Дизайн</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project1.jpg" alt="Проєкт LAB" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Проєкт LAB</h2>
               <p class="proj-type">Маркетинг</p>
             </div>
           </a>
         </li>
-        <li>
+        <li class="proj-item">
           <a class="link-undecor" href="#">
             <img class="proj-img" src="./images/project1.jpg" alt="Growing Business" width="370" />
-            <div>
+            <div class="proj-descript-block">
               <h2 class="proj-name">Growing Business</h2>
               <p class="proj-type">Додаток</p>
             </div>
@@ -155,33 +161,35 @@
       </ul>
     </main>
     <footer class="footer">
-      <a class="logo footer-logo link-undecor" href="./index.html"
-        ><span class="logo-blue">Web</span>Studio</a
-      >
-      <!-- Адрес -->
-      <address>
-        <ul class="semantic-list">
-          <li>
-            <a
-              class="adress footer-address link-undecor"
-              href="https://goo.gl/maps/ojvog4Eh8GTVvdpZ6"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="adress footer-contact link-undecor" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="adress footer-contact link-undecor" href="tel:380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container items">
+        <a class="logo footer-logo link-undecor" href="./index.html"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
+        <!-- Адрес -->
+        <address>
+          <ul class="semantic-list addr">
+            <li class="item">
+              <a
+                class="adress footer-address link-undecor"
+                href="https://goo.gl/maps/ojvog4Eh8GTVvdpZ6"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="item">
+              <a class="adress footer-contact link-undecor" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a class="adress footer-contact link-undecor" href="tel:380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
