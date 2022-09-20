@@ -36,6 +36,8 @@ ul {
 
 .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -82,7 +84,6 @@ ul {
 }
 .main-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .navbar {
@@ -94,11 +95,12 @@ ul {
 .nav-links {
     display: flex;
     justify-content: flex-start;
-    margin-top: 32px;
-    margin-bottom: 32px;
+
+    margin-left: auto;
 }
 
 .navbar-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -122,7 +124,7 @@ ul {
     color: var(--sec-text-color);
 }
 
-/* Герой */
+/* Секция герой */
 
 .hero-section {
     background-color: var(--hero-bg-color);
@@ -134,8 +136,6 @@ ul {
     flex-direction: column;
     padding-top: 200px;
     padding-bottom: 200px;
-
-    letter-spacing: 0.06em;
 }
 .hero-title {
     font-weight: 900;
@@ -144,6 +144,7 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: var(--hero-text-color);
+    letter-spacing: 0.06em;
 }
 .hero-btn {
     display: block;
@@ -160,6 +161,7 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--hero-text-color);
 }
@@ -167,7 +169,6 @@ ul {
 /* Преимущества */
 .advantages {
     display: flex;
-    justify-content: center;
 }
 .adv-item {
     max-width: 270px;
@@ -189,6 +190,9 @@ ul {
 }
 
 /* Галерея */
+.gallery {
+    padding-top: 0;
+}
 .gallery-container,
 .team-container {
     display: flex;
@@ -213,8 +217,6 @@ ul {
     background-color: var(--sec-bg-color);
 }
 .memb {
-    font-size: 16px;
-    line-height: 1.19;
     text-align: center;
     background-color: var(--prim-bg-color);
 }
@@ -222,21 +224,25 @@ ul {
     margin-top: 30px;
     margin-bottom: 10px;
 
+    line-height: 1.19;
+    font-size: 16px;
     font-weight: 500;
 }
 .memb-position {
     margin-bottom: 30px;
+
     color: var(--sec-text-color);
+    line-height: 1.19;
+    font-size: 16px;
 }
 
 /* Футер */
 .footer {
     background-color: var(--hero-bg-color);
-}
-.footer .items {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer-logo {
     display: inline-block;
     margin-right: 0;
@@ -268,7 +274,6 @@ ul {
 .projects-btn {
     padding: 6px 22px;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
 
     font-family: inherit;
@@ -282,12 +287,12 @@ ul {
 .projects-btn:hover,
 .projects-btn:focus,
 .projects-btn:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--accent-color);
     color: var(--hero-text-color);
 }
 .projects {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
     margin-top: 50px;
@@ -296,11 +301,13 @@ ul {
     width: 370px;
     margin: 15px;
 
-    border: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 .proj-descript-block {
     display: block;
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 .proj-name {
     margin-bottom: 4px;
